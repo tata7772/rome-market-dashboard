@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "@rome-protocol/registry": "github:rome-protocol/rome-registry#v0.2.0",
+    "@rome-protocol/sdk": "github:rome-protocol/rome-sdk-ts#v0.4.0",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.99.0",
+    "ethers": "^6.17.0",
+    "viem": "^2.57.18"
+  }
+}

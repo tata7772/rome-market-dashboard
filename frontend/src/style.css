@@ -1,0 +1,163 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #10121c;
+  color: #ffffff;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 55px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #a78bfa;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #a1a1aa;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 22px;
+  background: #805ad5;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6b46c1;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 30px 0 15px;
+}
+
+.dashboard-header h2 {
+  color: #c4b5fd;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.panel {
+  margin-top: 18px;
+  padding: 22px;
+  border: 1px solid #34364a;
+  border-radius: 16px;
+  background: #1b1d2b;
+}
+
+.price-card {
+  margin-top: 0;
+  text-align: left;
+}
+
+.price-card h2 {
+  color: #a78bfa;
+  margin-top: 0;
+}
+
+.price-value {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 18px 0;
+  overflow-wrap: anywhere;
+}
+
+.price-time {
+  color: #a1a1aa;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.stale {
+  color: #f6ad55 !important;
+}
+
+#oracleStatus {
+  color: #a78bfa;
+  margin: 18px 0 35px;
+}
+
+.wallet-section {
+  margin-top: 35px;
+}
+
+.wallet-section .panel {
+  text-align: left;
+}
+
+.wallet-section .panel h2 {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border: 1px solid #45475a;
+  border-radius: 8px;
+  background: #10121c;
+  color: white;
+  font-size: 15px;
+}
+
+#account,
+#status,
+#network,
+#balance {
+  color: #a78bfa;
+  overflow-wrap: anywhere;
+  margin-top: 15px;
+}
+
+#message,
+#txHash {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 550px) {
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
